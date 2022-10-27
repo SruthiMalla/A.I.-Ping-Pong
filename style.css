@@ -24,3 +24,19 @@
 {
     font-size: 22px;
 }
+
+.modal-dialog
+{
+    width: 90%;
+}
+
+h3
+{
+    background-color: white;
+    line-height: 2;
+    margin: 0px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+}
