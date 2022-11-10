@@ -20,8 +20,15 @@ var ball = {
 
 rightwristX = "";
 rightwristY = "";
+GameStatus = "";
 
-function setup(){
+function startGame()
+{
+  GameStatus = "start";
+}
+
+function setup()
+{
   var canvas =  createCanvas(700,600);
   canvas.parent("canvas");
   video = createCapture(VIDEO);
@@ -47,7 +54,10 @@ function gotPoses(results)
   }
 }
 
-function draw(){
+function draw()
+{
+  if(GameStatus == "start")
+  {
 
  background(0);
  image(video, 0, 0, 700, 600);
@@ -92,7 +102,7 @@ function draw(){
    //function move call which in very important
     move();
 }
-
+}
 
 
 //function reset when ball does notcame in the contact of padde
